@@ -17,8 +17,17 @@ namespace Assignment5_comp123.Views
             InitializeComponent();
         }
 
+        public bool HasLoadedDataSource()
+        {
+            return false;
+        }
         private void SelectForm_Load(object sender, EventArgs e)
         {
+            if(!HasLoadedDataSource())
+            {
+                MessageBox.Show("DateSource Not Loaded", "ERROR",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             // TODO: This line of code loads data into the 'dollarComputersDataSet.products' table. You can move, or remove it, as needed.
             this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
 
