@@ -29,49 +29,32 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SplashForm));
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.Welcomelabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer
             // 
             this.timer.Interval = 3000;
             // 
-            // Welcomelabel
+            // label1
             // 
-            this.Welcomelabel.AutoSize = true;
-            this.Welcomelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.Welcomelabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.Welcomelabel.Location = new System.Drawing.Point(34, 376);
-            this.Welcomelabel.Name = "Welcomelabel";
-            this.Welcomelabel.Size = new System.Drawing.Size(252, 24);
-            this.Welcomelabel.TabIndex = 3;
-            this.Welcomelabel.Text = "Welcome to Dollar Computer";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(38, 26);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(269, 301);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(97, 354);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "label1";
             // 
             // SplashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(345, 430);
-            this.Controls.Add(this.Welcomelabel);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label1);
             this.Name = "SplashForm";
             this.Opacity = 0.8D;
             this.Text = "SplashForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -80,7 +63,6 @@
         #endregion
 
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.Label Welcomelabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

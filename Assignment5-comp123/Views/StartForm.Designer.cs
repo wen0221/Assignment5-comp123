@@ -28,13 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StartForm));
             this.Exitbutton = new System.Windows.Forms.Button();
             this.Savebutton = new System.Windows.Forms.Button();
             this.Newbutton = new System.Windows.Forms.Button();
             this.Chooselabel = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Exitbutton
@@ -77,15 +74,6 @@
             this.Chooselabel.TabIndex = 6;
             this.Chooselabel.Text = "Choose your computer today";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(72, 52);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(286, 279);
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -95,10 +83,8 @@
             this.Controls.Add(this.Savebutton);
             this.Controls.Add(this.Newbutton);
             this.Controls.Add(this.Chooselabel);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "StartForm";
             this.Text = "StartForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,6 +96,5 @@
         private System.Windows.Forms.Button Savebutton;
         private System.Windows.Forms.Button Newbutton;
         private System.Windows.Forms.Label Chooselabel;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

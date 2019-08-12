@@ -19,8 +19,23 @@ namespace Assignment5_comp123.Views
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ProductPrintForm.PrintAction = PrintAction.PrintToPreview;
-            ProductPrintForm.Print();
+          //  ProductPrintForm.PrintAction = PrintAction.PrintToPreview;
+           // ProductPrintForm.Print();
+        }
+
+        private void CancelButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Tableline_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
