@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Assignment5_comp123
+namespace Assignment5_comp123.Views
 {
-    public partial class Form1 : Form
+    public partial class SelectForm : Form
     {
-        public Form1()
+        public SelectForm()
         {
             InitializeComponent();
         }
