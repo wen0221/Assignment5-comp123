@@ -16,5 +16,10 @@ namespace Assignment5_comp123.Views
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

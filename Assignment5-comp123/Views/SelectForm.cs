@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Assignment5_comp123.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -21,6 +23,15 @@ namespace Assignment5_comp123.Views
 
         public bool HasLoadedDataSource()
         {
+            using (var db = new ProductModel())
+            {
+                db.products.Load();
+                productsBindingSource.DataSource = db.products.Local.ToBindingList();
+                if(productsBindingSource.DataSource!=null)
+                {
+                    return true;
+                }
+            }
             return false;
         }
         private string ProductdataGridViewSelectItem()

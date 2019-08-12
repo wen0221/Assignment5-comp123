@@ -18,7 +18,7 @@ namespace Assignment5_comp123.Data
         {
             modelBuilder.Entity<Product>()
                 .Property(e => e.cost)
-                .HasPrecision(19, 4);
+                .HasPrecision(19, 2);
         }
     }
 }

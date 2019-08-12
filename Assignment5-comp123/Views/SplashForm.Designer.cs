@@ -30,28 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.SplashLable = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // timer
             // 
             this.timer.Interval = 3000;
             // 
-            // label1
+            // SplashLable
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(97, 354);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
+            this.SplashLable.AutoSize = true;
+            this.SplashLable.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SplashLable.Location = new System.Drawing.Point(48, 332);
+            this.SplashLable.Name = "SplashLable";
+            this.SplashLable.Size = new System.Drawing.Size(252, 24);
+            this.SplashLable.TabIndex = 0;
+            this.SplashLable.Text = "Welcome to Dollar Computer";
             // 
             // SplashForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(345, 430);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.SplashLable);
             this.Name = "SplashForm";
             this.Opacity = 0.8D;
             this.Text = "SplashForm";
@@ -63,6 +64,6 @@
         #endregion
 
         private System.Windows.Forms.Timer timer;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label SplashLable;
     }
 }

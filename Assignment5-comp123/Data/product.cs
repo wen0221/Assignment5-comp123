@@ -10,7 +10,7 @@ namespace Assignment5_comp123.Data
     {
         public short productID { get; set; }
 
-        [Column(TypeName = "money")]
+        [Column(TypeName = "decimal(19,2)")]
         public decimal? cost { get; set; }
 
         [StringLength(255)]

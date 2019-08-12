@@ -17,7 +17,7 @@ namespace Assignment5_comp123
         public static SelectForm selectForm;
         public static Views.StartForm startForm;
         public static ProductInfoForm proudctInfotForm;
-        public static SplashForm splashtForm;
+        public static SplashForm splashForm;
         public static AboutForm aboutForm;
         public static Product product;
 
@@ -34,9 +34,10 @@ namespace Assignment5_comp123
             orderForm = new OrderForm();
             selectForm = new SelectForm();
             startForm = new Views.StartForm();
-            splashtForm = new SplashForm();
+            proudctInfotForm = new ProductInfoForm();
+            splashForm = new SplashForm();
             aboutForm = new AboutForm();
-            Application.Run(selectForm);
+            Application.Run(splashForm);
         }
     }
 }
