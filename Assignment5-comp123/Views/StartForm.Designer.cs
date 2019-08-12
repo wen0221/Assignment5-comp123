@@ -84,7 +84,7 @@
             this.Controls.Add(this.Newbutton);
             this.Controls.Add(this.Chooselabel);
             this.Name = "StartForm";
-            this.Text = "StartForm";
+            this.Text = " ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
