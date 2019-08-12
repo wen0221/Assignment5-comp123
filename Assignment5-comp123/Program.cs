@@ -18,7 +18,7 @@ namespace Assignment5_comp123
         public static ProductInfoForm proudctInfotForm;
         public static SplashForm splashtForm;
         public static AboutForm aboutForm;
-        public static Product product;
+        //public static Product product;
 
 
         /// <summary>
@@ -29,7 +29,7 @@ namespace Assignment5_comp123
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            product = new Product();
+           // product = new Product();
             orderForm = new OrderForm();
             selectForm = new SelectForm();
             startForm = new Views.StartForm();
