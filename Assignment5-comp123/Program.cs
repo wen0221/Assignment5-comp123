@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assignment5_comp123.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -11,12 +12,30 @@ namespace Assignment5_comp123
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        public static OrderForm orderForm;
+        public static SelectForm selectForm;
+        public static Views.StartForm startForm;
+        public static ProductInfoForm proudctInfotForm;
+        public static SplashForm splashtForm;
+        public static AboutForm aboutForm;
+        public static Product product;
+
+
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            product = new Product();
+            orderForm = new OrderForm();
+            selectForm = new SelectForm();
+            startForm = new Views.StartForm();
+            splashtForm = new SplashForm();
+            aboutForm = new AboutForm();
+            Application.Run(selectForm);
         }
     }
 }
