@@ -15,9 +15,23 @@ namespace DollarComputersUnitTestProjec
 
 
             selectForm = new SelectForm();
+
+
             Assert.IsTrue(selectForm.HasLoadedDataSource());
-
-
         }
+            public void TestThatSelectLabelDisplaysItemSelected()
+        {
+            SelectForm selectForm;
+
+
+            selectForm = new SelectForm();
+            selectForm.ShowInTaskbar = false;
+            selectForm.ShowDialog();
+
+            Assert.AreEqual("Hello World Item", selectForm.SelectLabel.Text);
+        }
+
+
+        
     }
 }

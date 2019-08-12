@@ -12,6 +12,8 @@ namespace Assignment5_comp123.Views
 {
     public partial class SelectForm : Form
     {
+        private int rowIndex;
+
         public SelectForm()
         {
             InitializeComponent();
@@ -20,6 +22,17 @@ namespace Assignment5_comp123.Views
         public bool HasLoadedDataSource()
         {
             return false;
+        }
+        private string ProductdataGridViewSelectItem()
+        {
+            var rouIndex = ProductdataGridView.CurrentCell.RowIndex;
+            var currentrow = ProductdataGridView.Rows[rowIndex];
+            var cost = currentrow.Cells[1].Value.ToString();
+            var manufacturer = currentrow.Cells[2].Value.ToString();
+            var model = currentrow.Cells[3].Value.ToString();
+
+            string outputstring = manufacturer + " " + model + " " + cost;
+            return outputstring;
         }
         private void SelectForm_Load(object sender, EventArgs e)
         {
@@ -37,5 +50,12 @@ namespace Assignment5_comp123.Views
         {
             Application.Exit();
         }
+
+        private void ProductdataGridView_SelectionChanged(object sender, EventArgs e)
+        {
+            SelectLabel.Text = ProductdataGridViewSelectItem();
+        }
+
+       
     }
 }
