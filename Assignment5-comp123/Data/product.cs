@@ -6,7 +6,7 @@ namespace Assignment5_comp123.Data
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    public partial class product
+    public partial class Product
     {
         public short productID { get; set; }
 

@@ -23,5 +23,10 @@ namespace Assignment5_comp123.Views
             this.productsTableAdapter.Fill(this.dollarComputersDataSet.products);
 
         }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

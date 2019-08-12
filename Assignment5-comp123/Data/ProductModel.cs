@@ -12,11 +12,11 @@ namespace Assignment5_comp123.Data
         {
         }
 
-        public virtual DbSet<product> products { get; set; }
+        public virtual DbSet<Product> products { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<product>()
+            modelBuilder.Entity<Product>()
                 .Property(e => e.cost)
                 .HasPrecision(19, 4);
         }
